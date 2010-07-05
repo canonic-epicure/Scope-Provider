@@ -1,91 +1,94 @@
 Name
 ====
 
-Scope.Provider - Some clever yet compact description
+Scope.Provider - cross-platform JavaScript scope provider
 
 
 SYNOPSIS
 ========
 
-        // declaring our class
-        Class('Scope.Provider', {
+        var provider = new Scope.Provider.IFrame()
         
+        provider.setup(function () {
+        
+            if (provider.scope.SOME_GLOBAL == 'some_value') {
+                ...
+            }
+            
+            provider.runCode(text, callback)
+            
+            ...
+            
+            provider.runScript(url, callback)
+            
+            ...
+            
+            provider.cleanup()        
         })
-        
-        // then instantiating it
-        var instance = new Scope.Provider({
-        })
-        
-        // and doing something totally awesome with it :D
-        instance.method(param1, param2)
-        
 
 
 DESCRIPTION
 ===========
 
-`Scope.Provider` is a stub for Joose-orientied JSAN modules.
+`Scope.Provider` distribution implements cross-platform (browser/NodeJS) creation of the new JavaScript scope.
+By itself, `Scope.Provider` is an abstract class, all concrete work is delegated to its subclasses:
 
+[Scope.Provider.IFrame](Provider/IFrame.html)
 
-ISA
-===
+[Scope.Provider.Window](Provider/Window.html)
 
-None.
-
-
-DOES
-====
-
-None.
-
-
-TRAITS
-======
-
-None.
+[Scope.Provider.NodeJS](Provider/NodeJS.html)
 
 
 
 ATTRIBUTES
 ==========
 
-### attributeName
+### scope
 
-> `AttributeType attributeName`
+> `Object scope`
 
-> Attribute description
+> A newly created scope (usually `window` in browsers and `global` in NodeJS)
 
 
 METHODS
 =======
 
-### methodName
+### setup
 
-> `method signature`
+> `setup(Function callback)`
 
-> Method description
+> Set up a new scope. Scope will be ready in the provided callback. Callback will receive an instance of `Scope.Provider` as the
+1st argument
 
 
-EXAMPLES
-========
+### runCode
 
-Our class can be used like this:
+> `runCode(String text, Function callback)`
 
-        // then instantiating it
-        var instance = new Scope.Provider({
-        })
+> Run a code, presented with `text` argument, in the previously created scope. Code will be ran by the time of the 
+`callback` function called. Callback won't receive any arguments.
 
-and like that:
 
-        // then instantiating it
-        var instance = new Scope.Provider({
-        })
+### runScript
+
+> `runScript(String url, Function callback)`
+
+> Run a code, in script on the `url`, in the previously created scope. Code will be ran by the time of the 
+`callback` function called. Callback won't receive any arguments.
+
+
+### cleanup
+
+> `cleanup()`
+
+> Releases any resources, used during scope creation.
 
 
 GETTING HELP
 ============
 
-This extension is supported via github issues tracker: <http://github.com/SamuraiJack/Module-Stub/issues>
+This extension is supported via github issues tracker: <http://github.com/SamuraiJack/Scope-Provider/issues>
 
 For general Joose questions you can also visit [#joose](http://webchat.freenode.net/?randomnick=1&channels=joose&prompt=1) 
 on irc.freenode.org or the forum at: <http://joose.it/forum>
@@ -95,7 +98,7 @@ on irc.freenode.org or the forum at: <http://joose.it/forum>
 SEE ALSO
 ========
 
-Web page of this module: <http://github.com/SamuraiJack/Module-Stub/>
+Web page of this module: <http://github.com/SamuraiJack/Scope-Provider/>
 
 General documentation for Joose: <http://openjsan.org/go/?l=Joose>
 
@@ -105,7 +108,7 @@ BUGS
 
 All complex software has bugs lurking in it, and this module is no exception.
 
-Please report any bugs through the web interface at <http://github.com/SamuraiJack/Module-Stub/issues>
+Please report any bugs through the web interface at <http://github.com/SamuraiJack/Scope-Provider/issues>
 
 
 
