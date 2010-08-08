@@ -1,6 +1,8 @@
 Release history for Scope.Provider
 
 {{$NEXT}}
+
+0.02      2010-08-08 12:07
         
         - added encoding = 'utf8' parameter to `readFileSync` call, 
         to receive the string as result (seems required for nodejs
