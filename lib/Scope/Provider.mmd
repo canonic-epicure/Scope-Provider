@@ -1,3 +1,5 @@
+If links in this document aren't work correctly, [try to open it from here](http://samuraijack.github.com/Scope-Provider)
+
 Name
 ====
 
