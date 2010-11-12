@@ -2,6 +2,8 @@ Release history for Scope.Provider
 
 {{$NEXT}}
 
+        - various fixed for Window scope provider
+
 0.04      2010-10-27 22:18
 
         - point to docs on github, not on openjsan
