@@ -27,7 +27,41 @@ SYNOPSIS
             
             provider.cleanup()        
         })
+        
 
+INSTALLATION
+============
+
+From `npm`:
+    
+    > [sudo] npm install scope-provider         
+
+
+SETUP
+=====
+
+In NodeJS:
+
+    require('scope-provider')
+    
+    var provider = new Scope.Provider.NodeJS()
+    
+    provider.setup(function () {
+        ...
+    })
+    
+In browsers (assuming you've completed the 3.1 item from this [document](http://joose.github.com/Joose/doc/html/Joose/Manual/Installation.html)):
+
+    <script type="text/javascript" src="/jsan/Task/Scope/Provider/Core.js"></script>
+    <script type="text/javascript">
+    
+        var provider = new Scope.Provider.IFrame()
+        
+        provider.setup(function () {
+            ...
+        })
+    </script>
+    
 
 DESCRIPTION
 ===========
@@ -92,8 +126,9 @@ GETTING HELP
 
 This extension is supported via github issues tracker: <http://github.com/SamuraiJack/Scope-Provider/issues>
 
-For general Joose questions you can also visit [#joose](http://webchat.freenode.net/?randomnick=1&channels=joose&prompt=1) 
-on irc.freenode.org or the forum at: <http://joose.it/forum>
+You can also ask questions at IRC channel : [#joose](http://webchat.freenode.net/?randomnick=1&channels=joose&prompt=1)
+ 
+Or the mailing list: <http://groups.google.com/group/joose-js>
  
 
 
