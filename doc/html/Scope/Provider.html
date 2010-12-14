@@ -32,6 +32,39 @@
     })
 </code></pre>
 
+<h1 id="installation">INSTALLATION</h1>
+
+<p>From <code>npm</code>:</p>
+
+<pre><code>&gt; [sudo] npm install scope-provider         
+</code></pre>
+
+<h1 id="setup">SETUP</h1>
+
+<p>In NodeJS:</p>
+
+<pre><code>require('scope-provider')
+
+var provider = new Scope.Provider.NodeJS()
+
+provider.setup(function () {
+    ...
+})
+</code></pre>
+
+<p>In browsers (assuming you've completed the 3.1 item from this <a href="http://joose.github.com/Joose/doc/html/Joose/Manual/Installation.html">document</a>):</p>
+
+<pre><code>&lt;script type="text/javascript" src="/jsan/Task/Scope/Provider/Core.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+
+    var provider = new Scope.Provider.IFrame()
+
+    provider.setup(function () {
+        ...
+    })
+&lt;/script&gt;
+</code></pre>
+
 <h1 id="description">DESCRIPTION</h1>
 
 <p><code>Scope.Provider</code> distribution implements cross-platform (browser/NodeJS) creation of the new JavaScript scope.
@@ -94,8 +127,9 @@ By itself, <code>Scope.Provider</code> is an abstract class, all concrete work i
 
 <p>This extension is supported via github issues tracker: <a href="http://github.com/SamuraiJack/Scope-Provider/issues">http://github.com/SamuraiJack/Scope-Provider/issues</a></p>
 
-<p>For general Joose questions you can also visit <a href="http://webchat.freenode.net/?randomnick=1&amp;channels=joose&amp;prompt=1">#joose</a> 
-on irc.freenode.org or the forum at: <a href="http://joose.it/forum">http://joose.it/forum</a></p>
+<p>You can also ask questions at IRC channel : <a href="http://webchat.freenode.net/?randomnick=1&amp;channels=joose&amp;prompt=1">#joose</a></p>
+
+<p>Or the mailing list: <a href="http://groups.google.com/group/joose-js">http://groups.google.com/group/joose-js</a></p>
 
 <h1 id="seealso">SEE ALSO</h1>
 
@@ -111,11 +145,11 @@ on irc.freenode.org or the forum at: <a href="http://joose.it/forum">http://joos
 
 <h1 id="authors">AUTHORS</h1>
 
-<p>Nickolay Platonov <a href="&#109;a&#105;&#x6C;&#116;&#111;:&#x6E;p&#108;&#97;&#116;&#x6F;&#110;o&#118;&#64;&#x63;pa&#x6E;&#46;&#x6F;&#114;&#x67;">&#x6E;p&#108;&#97;&#116;&#x6F;&#110;o&#118;&#64;&#x63;pa&#x6E;&#46;&#x6F;&#114;&#x67;</a></p>
+<p>Nickolay Platonov <a href="&#x6D;&#x61;&#x69;&#108;t&#111;:&#x6E;&#112;&#x6C;&#x61;&#x74;&#x6F;&#110;&#111;&#118;&#64;&#x63;&#112;&#97;n&#46;&#x6F;&#x72;&#x67;">&#x6E;&#112;&#x6C;&#x61;&#x74;&#x6F;&#110;&#111;&#118;&#64;&#x63;&#112;&#97;n&#46;&#x6F;&#x72;&#x67;</a></p>
 
 <h1 id="copyrightandlicense">COPYRIGHT AND LICENSE</h1>
 
-<p>This software is Copyright (c) 2010 by Nickolay Platonov <a href="&#109;&#97;&#x69;&#x6C;&#x74;&#111;:&#x6E;&#112;&#108;&#97;t&#x6F;&#x6E;&#111;&#118;&#64;c&#112;&#x61;&#110;.&#111;&#x72;&#103;">&#x6E;&#112;&#108;&#97;t&#x6F;&#x6E;&#111;&#118;&#64;c&#112;&#x61;&#110;.&#111;&#x72;&#103;</a>.</p>
+<p>This software is Copyright (c) 2010 by Nickolay Platonov <a href="&#109;&#97;&#105;&#x6C;&#116;&#111;:&#x6E;p&#108;&#x61;&#x74;&#111;&#x6E;&#111;&#118;&#64;c&#112;&#97;&#x6E;&#x2E;&#111;&#114;&#x67;">&#x6E;p&#108;&#x61;&#x74;&#111;&#x6E;&#111;&#118;&#64;c&#112;&#97;&#x6E;&#x2E;&#111;&#114;&#x67;</a>.</p>
 
 <p>This is free software, licensed under:</p>
 
