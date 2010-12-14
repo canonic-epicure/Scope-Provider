@@ -2,6 +2,9 @@ Release history for Scope.Provider
 
 {{$NEXT}}
 
+        - various small docs updates
+        - bumped dependency from Task.Joose.Stable
+        
 0.05      2010-11-12 13:32
 
         - various fixed for Window scope provider
