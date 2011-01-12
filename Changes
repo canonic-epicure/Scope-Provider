@@ -2,6 +2,8 @@ Release history for Scope.Provider
 
 {{$NEXT}}
 
+        - NodeJS provider now evalutes the code in the global scope
+
 0.07      2011-01-12 18:39
 
         - re-release just to pick up the new markdown css styles, no functional changes
