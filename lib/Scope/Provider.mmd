@@ -36,6 +36,7 @@ From `npm`:
     
     > [sudo] npm install scope-provider         
 
+Tarballs are available for downloading at: <http://search.npmjs.org/#/scope-provider>
 
 SETUP
 =====
