@@ -34,7 +34,7 @@ INSTALLATION
 
 From `npm`:
     
-    > [sudo] npm install scope-provider         
+    > [sudo] npm install scope-provider --unsafe-perm=true         
 
 Tarballs are available for downloading at: <http://search.npmjs.org/#/scope-provider>
 
