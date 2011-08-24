@@ -1,0 +1,16 @@
+COMPONENTS = {
+	// a comment
+	
+	"All" : {
+        
+        saveAs      : 'scope-provider-all.js',
+        
+        contains    : [
+            "Scope.Provider",
+            "Scope.Provider.Role.WithDOM",
+            "Scope.Provider.IFrame",
+            "Scope.Provider.Window",
+            "Scope.Provider.NodeJS"
+        ]
+    }
+}
